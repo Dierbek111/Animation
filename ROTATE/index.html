@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Сайт с вращающейся анимацией</title>
+  <style>
+    body {
+      margin: 0;
+      background-color: #f0f0f0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      width: 200px;
+      height: 200px;
+      background-color: #4CAF50;
+      border-radius: 50%;
+      animation: spin 5s linear infinite;
+      position: relative;
+    }
+
+    .text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      font-size: 24px;
+    }
+
+    @keyframes spin {
+      0% {
+        transform: scale(0px);
+      }
+
+      100% {
+        transform: scale(260PX);
+        }}
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="text">Вращающийся круг</div>
+  </div>
+</body>
+    
+</html>
